@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Mario 3D Word Quest</title>
   <style>
+    @import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap");
+
     :root {
       --ink: #17211f;
       --soft-ink: #41514d;
@@ -17,8 +19,9 @@
       --border: #17211f;
       --shadow: 0 14px 0 rgba(31, 40, 35, 0.22), 0 22px 36px rgba(22, 35, 42, 0.18);
       --radius: 8px;
+      --kid-letter-font: "Comic Neue", "Comic Sans MS", "Chalkboard SE", "Marker Felt";
       color-scheme: light;
-      font-family: "Trebuchet MS", "Arial Rounded MT Bold", "Noto Sans SC", system-ui, sans-serif;
+      font-family: var(--kid-letter-font), "Noto Sans SC", system-ui, sans-serif;
     }
 
     * {
@@ -763,6 +766,7 @@
       background: #fffdf3;
       padding: 8px;
       font-size: clamp(30px, 5vw, 58px);
+      font-family: var(--kid-letter-font), "Noto Sans SC", system-ui, sans-serif;
       font-weight: 1000;
       line-height: 1;
       overflow-wrap: anywhere;
@@ -784,6 +788,7 @@
       min-height: 58px;
       padding: 8px 13px;
       font-size: clamp(25px, 4.3vw, 44px);
+      font-family: var(--kid-letter-font), "Noto Sans SC", system-ui, sans-serif;
       font-weight: 1000;
       background: linear-gradient(180deg, #fff, #ffe999);
     }
